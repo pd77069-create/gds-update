@@ -3,8 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GDS Update 2026 | Recruitment Timeline & Status</title>
-<meta name="description" content="GDS Recruitment 2026 latest updates, schedule, and official status.">
+<title>GDS Update 2026 | Apply Online, Result & Latest Notice</title>
+<meta name="description" content="GDS Recruitment 2026 latest updates, apply online, result, merit list and schedule.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://pd77069-create.github.io/gds-update/">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
@@ -12,134 +14,142 @@
     body { font-family: 'Inter', sans-serif; background-color: #f1f5f9; color: #1e293b; line-height: 1.4; padding-bottom: 12px; }
     a { text-decoration: none; }
 
+    /* Header */
     header {
         background: linear-gradient(135deg, #1e3a8a, #2563eb);
-        color: #fff;
-        padding: 10px 16px;
+        color: #ffffff;
+        padding: 10px 14px;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
     .top {
-        max-width: 600px;
+        max-width: 650px;
         margin: auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    .logo { font-size: 17px; font-weight: 700; }
-    .sub { font-size: 11px; color: #bfdbfe; }
+    .logo { font-size: 17px; font-weight: 700; letter-spacing: -0.5px; }
+    .sub { font-size: 11px; margin-top: 1px; color: #bfdbfe; }
+    .home-btn {
+        background: rgba(255, 255, 255, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        color: #fff;
+        padding: 4px 10px;
+        border-radius: 6px;
+        font-size: 12px;
+        font-weight: 500;
+        cursor: pointer;
+    }
 
-    main { max-width: 600px; margin: auto; padding: 12px; }
+    /* Main Container */
+    main { max-width: 650px; margin: auto; padding: 12px; }
 
+    /* Hero */
     .hero {
-        background: #fff;
+        background: #ffffff;
         padding: 12px;
-        border-radius: 8px;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        border-radius: 10px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.04);
         margin-bottom: 10px;
         text-align: center;
     }
-    .hero h1 { font-size: 18px; color: #0f172a; margin-bottom: 4px; }
+    .hero h1 { font-size: 18px; color: #0f172a; margin-bottom: 4px; font-weight: 700; }
+    .hero p { font-size: 12px; color: #64748b; }
     .notice {
-        margin-top: 6px;
+        margin-top: 8px;
         padding: 6px 10px;
         background: #fffbeb;
         border-left: 3px solid #f59e0b;
         color: #92400e;
         font-size: 11px;
+        font-weight: 500;
+        border-radius: 4px;
         text-align: left;
     }
 
-    /* Quick Links Grid */
+    /* Compact Grid */
     .grid {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         gap: 8px;
         margin-bottom: 10px;
     }
     .card {
-        background: #fff;
+        background: #ffffff;
         padding: 10px 6px;
         border-radius: 8px;
         text-align: center;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.04);
         border: 1px solid #e2e8f0;
-        transition: transform 0.15s, border-color 0.15s;
+        transition: transform 0.15s ease, border-color 0.15s ease;
     }
-    .card:hover { transform: translateY(-2px); border-color: #2563eb; }
-    .icon { font-size: 18px; margin-bottom: 2px; }
-    .card h3 { font-size: 12px; color: #1e293b; font-weight: 600; }
+    .card:hover {
+        transform: translateY(-2px);
+        border-color: #2563eb;
+    }
+    .icon { font-size: 20px; margin-bottom: 3px; }
+    .card h3 { font-size: 12px; color: #1e293b; font-weight: 600; margin-bottom: 1px; }
+    .card p { font-size: 10px; color: #64748b; }
 
-    /* Professional Table Section */
-    .table-section {
-        background: #fff;
+    /* Compact Table Section */
+    section {
+        background: #ffffff;
         padding: 12px;
-        border-radius: 8px;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        border-radius: 10px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.04);
         margin-bottom: 10px;
     }
-    .table-section h2 { 
-        font-size: 14px; 
-        margin-bottom: 8px; 
-        display: flex; 
-        align-items: center; 
-        gap: 6px; 
-        color: #0f172a; 
-    }
-
-    .table-wrapper {
-        overflow-x: auto;
-    }
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        font-size: 12px;
-        text-align: left;
-    }
-    th {
-        background-color: #f8fafc;
-        color: #475569;
-        font-weight: 600;
-        padding: 8px 10px;
-        border-bottom: 2px solid #e2e8f0;
-    }
-    td {
-        padding: 8px 10px;
+    section h2 {
+        font-size: 14px;
+        color: #0f172a;
+        margin-bottom: 8px;
+        padding-bottom: 4px;
         border-bottom: 1px solid #f1f5f9;
-        color: #334155;
+        display: flex;
+        align-items: center;
+        gap: 6px;
     }
+    table { width: 100%; border-collapse: collapse; font-size: 12px; text-align: left; }
+    th { background-color: #f8fafc; color: #475569; font-weight: 600; padding: 7px 8px; border-bottom: 1px solid #e2e8f0; }
+    td { padding: 7px 8px; border-bottom: 1px solid #f1f5f9; color: #334155; }
     tr:last-child td { border-bottom: none; }
-    tr:hover td { background-color: #f8fafc; }
-
-    /* Status Badges */
-    .badge {
-        display: inline-block;
-        padding: 2px 7px;
-        border-radius: 12px;
-        font-size: 10px;
-        font-weight: 600;
-        white-space: nowrap;
-    }
-    .badge-info { background: #e0f2fe; color: #0369a1; }
+    
+    /* Badges */
+    .badge { display: inline-block; padding: 2px 6px; border-radius: 10px; font-size: 10px; font-weight: 600; }
     .badge-warn { background: #fef3c7; color: #b45309; }
-    .badge-success { background: #dcfce7; color: #15803d; }
+    .badge-info { background: #e0f2fe; color: #0369a1; }
+    .badge-ok { background: #dcfce7; color: #15803d; }
 
-    /* Action Buttons */
-    .actions { display: flex; gap: 8px; }
+    /* Single Clean Button */
     .btn {
-        flex: 1;
+        display: block;
         text-align: center;
         background: #2563eb;
-        color: #fff;
+        color: #ffffff;
         padding: 9px;
         border-radius: 6px;
         font-size: 12px;
         font-weight: 600;
+        margin-top: 8px;
+        transition: background 0.2s ease;
     }
-    .btn.alt { background: #eff6ff; color: #2563eb; border: 1px solid #bfdbfe; }
+    .btn:hover { background: #1d4ed8; }
 
+    /* Footer */
     footer {
         text-align: center;
         color: #94a3b8;
         font-size: 10px;
-        padding: 8px;
+        padding: 6px;
+    }
+
+    /* Mobile Responsive */
+    @media(max-width: 500px) {
+        .grid { grid-template-columns: repeat(2, 1fr); }
+        .hero h1 { font-size: 16px; }
     }
 </style>
 </head>
@@ -149,16 +159,19 @@
 <header>
     <div class="top">
         <div>
-            <div class="logo">📮 GDS Update 2026</div>
-            <div class="sub">India Post Recruitment Information</div>
+            <div class="logo">📮 GDS Update</div>
+            <div class="sub">Gramin Dak Sevak Recruitment Updates</div>
         </div>
+        <button class="home-btn" onclick="window.scrollTo(0,0)">Home</button>
     </div>
 </header>
 
 <main>
+    <!-- Hero Section -->
     <div class="hero">
-        <h1>Gramin Dak Sevak (GDS) 2026</h1>
-        <div class="notice">⚠️ অফিসিয়াল তথ্যের জন্য সরাসরি India Post পোর্টালে ভিজিট করুন।</div>
+        <h1>GDS Recruitment 2026</h1>
+        <p>Apply Online, Application Status, Merit List ও Latest Notice</p>
+        <div class="notice">⚠️ আবেদন করার আগে সর্বদা অফিশিয়াল India Post/GDS পোর্টাল যাচাই করুন।</div>
     </div>
 
     <!-- Quick Links Grid -->
@@ -166,63 +179,60 @@
         <a class="card" href="https://indiapostgdsonline.gov.in/" target="_blank" rel="noopener">
             <div class="icon">📝</div>
             <h3>Apply Online</h3>
+            <p>Official portal</p>
         </a>
         <a class="card" href="https://indiapostgdsonline.gov.in/" target="_blank" rel="noopener">
             <div class="icon">🔎</div>
             <h3>App Status</h3>
+            <p>Check status</p>
+        </a>
+        <a class="card" href="https://indiapostgdsonline.gov.in/" target="_blank" rel="noopener">
+            <div class="icon">🎫</div>
+            <h3>Admit / Hall</h3>
+            <p>Direct link</p>
         </a>
         <a class="card" href="https://indiapostgdsonline.gov.in/" target="_blank" rel="noopener">
             <div class="icon">🏆</div>
             <h3>Merit List</h3>
+            <p>State-wise list</p>
         </a>
     </div>
 
-    <!-- Professional Date & Status Table -->
-    <div class="table-section">
-        <h2>📅 Schedule & Status Board</h2>
-        <div class="table-wrapper">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Event</th>
-                        <th>Date / Timeline</th>
-                        <th>Status</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><b>Official Notification</b></td>
-                        <td>To be announced</td>
-                        <td><span class="badge badge-warn">Pending</span></td>
-                    </tr>
-                    <tr>
-                        <td><b>Online Application</b></td>
-                        <td>Available soon</td>
-                        <td><span class="badge badge-info">Awaited</span></td>
-                    </tr>
-                    <tr>
-                        <td><b>Merit List 1st Round</b></td>
-                        <td>Post application</td>
-                        <td><span class="badge badge-info">Upcoming</span></td>
-                    </tr>
-                    <tr>
-                        <td><b>Selection Basis</b></td>
-                        <td>Class 10th Marks</td>
-                        <td><span class="badge badge-success">Confirmed</span></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
+    <!-- Schedule & Status Table -->
+    <section>
+        <h2>📅 Recruitment Timeline & Status</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Event</th>
+                    <th>Timeline</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><b>Notification</b></td>
+                    <td>Official release</td>
+                    <td><span class="badge badge-warn">Awaited</span></td>
+                </tr>
+                <tr>
+                    <td><b>Application Window</b></td>
+                    <td>Starts soon</td>
+                    <td><span class="badge badge-info">Upcoming</span></td>
+                </tr>
+                <tr>
+                    <td><b>Selection Process</b></td>
+                    <td>10th Merit Based</td>
+                    <td><span class="badge badge-ok">Confirmed</span></td>
+                </tr>
+            </tbody>
+        </table>
+        <a class="btn" href="https://indiapostgdsonline.gov.in/" target="_blank" rel="noopener">Visit Official GDS Portal ↗</a>
+    </section>
 
-    <!-- Quick Action Buttons -->
-    <div class="actions">
-        <a class="btn" href="https://indiapostgdsonline.gov.in/" target="_blank" rel="noopener">Official GDS Portal ↗</a>
-        <a class="btn alt" href="https://www.indiapost.gov.in/" target="_blank" rel="noopener">India Post Home ↗</a>
-    </div>
-
+    <!-- Footer -->
     <footer>
-        GDS Update © 2026 • Informational Portal Only
+        GDS Update © 2026 • Informational Purpose Only
     </footer>
 </main>
 
