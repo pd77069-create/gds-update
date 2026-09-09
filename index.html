@@ -1,671 +1,407 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>GDS Update — Apply Online, Result & Latest Notice</title>
-
-<meta name="description" content="Latest GDS recruitment updates, apply online, application status, admit card, result and important notices.">
-
-<style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>GDS Update — Apply Online, Result, Admit Card & Latest Notice</title><meta name="description" content="Latest India Post GDS recruitment updates, apply online, application status, result, admit card, exam date and important notices."><style>
 *{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
-  font-family:Arial,sans-serif
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
 }
 
 body{
-  background:#f4f7fb;
-  color:#172033
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f4f7fb;
+    color:#172033;
+    line-height:1.6;
 }
 
-/* HEADER */
 header{
-  background:linear-gradient(135deg,#174ea6,#2563eb);
-  color:#fff;
-  padding:13px 4%;
-  position:sticky;
-  top:0;
-  z-index:100;
-  box-shadow:0 2px 10px rgba(0,0,0,.15)
+    background:linear-gradient(135deg,#003b7a,#0066c0);
+    color:white;
+    padding:18px 15px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 3px 12px rgba(0,0,0,.15);
 }
 
-.nav{
-  max-width:1150px;
-  margin:auto;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:15px
+.header-inner{
+    max-width:1100px;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:15px;
 }
 
 .logo{
-  font-size:22px;
-  font-weight:bold;
-  white-space:nowrap
+    font-size:24px;
+    font-weight:800;
 }
 
 .logo span{
-  color:#ffd54f
+    color:#ffd43b;
 }
 
 nav{
-  display:flex;
-  gap:14px;
-  flex-wrap:wrap;
-  justify-content:center
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap;
 }
 
 nav a{
-  color:#fff;
-  text-decoration:none;
-  font-size:13px;
-  font-weight:bold
+    color:white;
+    text-decoration:none;
+    padding:8px 12px;
+    border-radius:8px;
+    font-size:14px;
+    font-weight:600;
 }
 
-/* HERO */
+nav a:hover{
+    background:rgba(255,255,255,.15);
+}
+
 .hero{
-  background:#fff;
-  padding:32px 15px 28px;
-  text-align:center
+    background:white;
+    padding:45px 15px;
+    text-align:center;
+    border-bottom:1px solid #e5e9ef;
 }
 
 .hero h1{
-  font-size:32px;
-  color:#123d82;
-  margin-bottom:10px
+    color:#003b7a;
+    font-size:34px;
+    margin-bottom:10px;
 }
 
 .hero p{
-  color:#667085;
-  font-size:15px;
-  max-width:680px;
-  margin:auto;
-  line-height:1.5
+    color:#667085;
+    max-width:700px;
+    margin:auto;
 }
 
-.buttons{
-  margin-top:18px;
-  display:flex;
-  justify-content:center;
-  gap:9px;
-  flex-wrap:wrap
-}
-
-.btn{
-  display:inline-block;
-  padding:10px 17px;
-  border-radius:7px;
-  text-decoration:none;
-  font-weight:bold;
-  font-size:13px
-}
-
-.primary{
-  background:#1769e0;
-  color:#fff
-}
-
-.secondary{
-  background:#e8eef9;
-  color:#174ea6
-}
-
-/* CONTAINER */
 .container{
-  max-width:1100px;
-  margin:20px auto;
-  padding:0 14px
+    max-width:1100px;
+    margin:auto;
+    padding:25px 15px;
 }
 
 .section-title{
-  font-size:21px;
-  margin-bottom:12px;
-  color:#123d82
+    text-align:center;
+    color:#003b7a;
+    margin-bottom:20px;
+    font-size:26px;
 }
 
-/* ADS */
-.ad-box{
-  background:#fff;
-  border:1px dashed #b7c0d0;
-  min-height:65px;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  color:#8993a4;
-  margin:18px 0;
-  border-radius:8px;
-  font-size:12px
+.notice{
+    background:#fff8df;
+    border-left:5px solid #f0b400;
+    padding:15px;
+    border-radius:8px;
+    margin-bottom:25px;
 }
 
-/* CARDS */
-.cards{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:11px
+.notice strong{
+    color:#9a6b00;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
 }
 
 .card{
-  background:#fff;
-  padding:15px 10px;
-  border-radius:10px;
-  text-align:center;
-  box-shadow:0 2px 8px rgba(0,0,0,.06)
+    background:white;
+    border-radius:14px;
+    padding:22px;
+    box-shadow:0 5px 18px rgba(0,0,0,.07);
+    border:1px solid #e8edf3;
+    transition:.2s;
+}
+
+.card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 8px 25px rgba(0,0,0,.12);
 }
 
 .icon{
-  font-size:27px;
-  margin-bottom:6px
+    font-size:35px;
+    margin-bottom:8px;
 }
 
 .card h3{
-  margin-bottom:5px;
-  font-size:16px
+    color:#003b7a;
+    margin-bottom:7px;
 }
 
 .card p{
-  color:#667085;
-  font-size:12px;
-  line-height:1.4;
-  margin-bottom:9px
+    color:#667085;
+    font-size:14px;
+    margin-bottom:15px;
 }
 
-.card a{
-  display:inline-block;
-  background:#1769e0;
-  color:#fff;
-  text-decoration:none;
-  padding:7px 11px;
-  border-radius:6px;
-  font-size:11px;
-  font-weight:bold
+.btn{
+    display:inline-block;
+    width:100%;
+    text-align:center;
+    padding:11px 15px;
+    background:#0066c0;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:700;
+    cursor:pointer;
+    border:0;
 }
 
-/* NOTICE */
-.notice-box{
-  background:#fff;
-  border-left:4px solid #1769e0;
-  border-radius:8px;
-  padding:13px;
-  box-shadow:0 2px 8px rgba(0,0,0,.05)
+.btn:hover{
+    background:#004b91;
 }
 
-.notice-box p{
-  margin:5px 0;
-  line-height:1.4;
-  font-size:13px
+.btn.green{
+    background:#159447;
 }
 
-/* UPDATES */
-.updates{
-  background:#fff;
-  border-radius:9px;
-  overflow:hidden;
-  box-shadow:0 2px 8px rgba(0,0,0,.05)
+.btn.orange{
+    background:#e88a00;
 }
 
-.update{
-  padding:11px 13px;
-  border-bottom:1px solid #edf0f5;
-  display:flex;
-  justify-content:space-between;
-  gap:10px;
-  align-items:center;
-  font-size:13px
+.btn.red{
+    background:#d93434;
 }
 
-.update:last-child{
-  border-bottom:none
+.btn.dark{
+    background:#26384d;
 }
 
-.update span{
-  color:#667085;
-  font-size:11px;
-  white-space:nowrap
-}
-
-.badge{
-  background:#e8f5e9;
-  color:#188038;
-  padding:4px 7px;
-  border-radius:15px;
-  font-size:10px;
-  font-weight:bold
-}
-
-/* LINKS */
 .links{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:10px
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
+    margin-top:20px;
 }
 
-.link-box{
-  background:#fff;
-  padding:13px;
-  border-radius:8px;
-  box-shadow:0 2px 7px rgba(0,0,0,.05)
+.links a{
+    background:white;
+    padding:16px;
+    border-radius:10px;
+    text-decoration:none;
+    color:#003b7a;
+    font-weight:700;
+    border:1px solid #e2e8f0;
 }
 
-.link-box h3{
-  font-size:14px
+.links a:hover{
+    background:#eef6ff;
 }
 
-.link-box a{
-  color:#1769e0;
-  text-decoration:none;
-  font-weight:bold;
-  font-size:12px
-}
-
-/* FOOTER */
 footer{
-  background:#111827;
-  color:#cbd5e1;
-  margin-top:28px;
-  padding:20px 14px;
-  text-align:center
+    background:#09233f;
+    color:#cbd5e1;
+    text-align:center;
+    padding:30px 15px;
+    margin-top:35px;
 }
 
 footer p{
-  margin:5px 0;
-  font-size:11px
+    margin:5px 0;
+    font-size:14px;
 }
 
-/* TABLET */
-@media(max-width:850px){
-
-  .cards{
-    grid-template-columns:repeat(2,1fr)
-  }
-
-  .links{
-    grid-template-columns:repeat(3,1fr)
-  }
-
-  .hero h1{
-    font-size:27px
-  }
+footer a{
+    color:#7fc3ff;
+    text-decoration:none;
 }
 
-/* MOBILE */
+@media(max-width:800px){
+    .grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .hero h1{
+        font-size:28px;
+    }
+
+    .header-inner{
+        flex-direction:column;
+    }
+
+    nav{
+        justify-content:center;
+    }
+}
+
 @media(max-width:520px){
+    .grid{
+        grid-template-columns:1fr;
+    }
 
-  header{
-    padding:10px 10px
-  }
+    .links{
+        grid-template-columns:1fr;
+    }
 
-  .nav{
-    flex-direction:row;
-    align-items:center
-  }
+    .logo{
+        font-size:21px;
+    }
 
-  .logo{
-    font-size:19px
-  }
-
-  nav{
-    gap:8px
-  }
-
-  nav a{
-    font-size:11px
-  }
-
-  .hero{
-    padding:24px 12px 21px
-  }
-
-  .hero h1{
-    font-size:24px;
-    line-height:1.2
-  }
-
-  .hero p{
-    font-size:13px
-  }
-
-  .buttons{
-    margin-top:14px
-  }
-
-  .btn{
-    padding:9px 12px;
-    font-size:11px
-  }
-
-  .container{
-    margin:15px auto;
-    padding:0 10px
-  }
-
-  .section-title{
-    font-size:18px;
-    margin-bottom:9px
-  }
-
-  /* 2 CARDS ON MOBILE */
-  .cards{
-    grid-template-columns:repeat(2,1fr);
-    gap:8px
-  }
-
-  .card{
-    padding:12px 7px
-  }
-
-  .icon{
-    font-size:24px
-  }
-
-  .card h3{
-    font-size:14px
-  }
-
-  .card p{
-    font-size:10px;
-    margin-bottom:7px
-  }
-
-  .card a{
-    padding:6px 8px;
-    font-size:10px
-  }
-
-  .ad-box{
-    min-height:50px;
-    margin:13px 0
-  }
-
-  .update{
-    padding:9px 10px;
-    font-size:11px
-  }
-
-  .update span{
-    font-size:9px
-  }
-
-  .links{
-    grid-template-columns:1fr 1fr
-  }
-
-  .link-box{
-    padding:11px
-  }
-
-  .link-box h3{
-    font-size:12px
-  }
-
-  .link-box a{
-    font-size:10px
-  }
-
-  footer{
-    margin-top:20px;
-    padding:17px 10px
-  }
+    nav a{
+        font-size:13px;
+    }
 }
-</style>
-</head>
+</style></head><body><header>
+<div class="header-inner"><div class="logo">
+📮 GDS <span>UPDATE</span>
+</div><nav>
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#links">Important Links</a>
+</nav></div>
+</header><section class="hero" id="home"><h1>India Post GDS Update</h1><p>
+Latest GDS Recruitment, Apply Online, Application Status,
+Result, Admit Card, Exam Date and Important Notices.
+</p></section><div class="container"><div class="notice">
+<strong>⚠️ Important:</strong>
+Always verify recruitment information from the official India Post GDS portal before submitting any application or payment.
+</div><section id="services"><h2 class="section-title">GDS Services</h2><div class="grid"><div class="card">
+<div class="icon">📝</div>
+<h3>Apply Online</h3>
+<p>Open the official India Post GDS online application portal.</p><a class="btn" 
+href="https://indiapostgdsonline.gov.in/"
+target="_blank"
+rel="noopener">
+Apply Online
+</a>
+
+</div><div class="card">
+<div class="icon">🔎</div>
+<h3>Application Status</h3>
+<p>Check your GDS application related information from the official portal.</p><a class="btn green"
+href="https://indiapostgdsonline.gov.in/"
+target="_blank"
+rel="noopener">
+Check Status
+</a>
+
+</div><div class="card">
+<div class="icon">🎫</div>
+<h3>Admit Card</h3>
+<p>Check the official GDS portal for admit card and candidate notices.</p><a class="btn orange"
+href="https://indiapostgdsonline.gov.in/"
+target="_blank"
+rel="noopener">
+Admit Card
+</a>
+
+</div><div class="card">
+<div class="icon">🏆</div>
+<h3>GDS Result</h3>
+<p>Check shortlisted candidates and result information from the official portal.</p><a class="btn"
+href="https://indiapostgdsonline.gov.in/"
+target="_blank"
+rel="noopener">
+Check Result
+</a>
+
+</div><div class="card">
+<div class="icon">📅</div>
+<h3>Exam / Recruitment Date</h3>
+<p>Get the latest official recruitment schedule and notices.</p><a class="btn dark"
+href="https://indiapostgdsonline.gov.in/"
+target="_blank"
+rel="noopener">
+View Schedule
+</a>
+
+</div><div class="card">
+<div class="icon">📢</div>
+<h3>Latest Notice</h3>
+<p>Read the latest notifications published on the official GDS portal.</p><a class="btn red"
+href="https://indiapostgdsonline.gov.in/"
+target="_blank"
+rel="noopener">
+Latest Notice
+</a>
+
+</div></div></section><section id="links" style="margin-top:40px;"><h2 class="section-title">Important Official Links</h2><div class="links"><a href="https://indiapostgdsonline.gov.in/"
+target="_blank"
+rel="noopener">
+🏠 Official GDS Portal
+</a>
+
+<a href="https://indiapostgdsonline.gov.in/HomePageS/D01.aspx"
+target="_blank"
+rel="noopener">
+📋 GDS Online Engagement
+</a>
+
+<a href="https://indiapostgdsonline.gov.in/Fee_Check.aspx"
+target="_blank"
+rel="noopener">
+💳 Check Fee Status
+</a>
+
+<a href="https://indiapostgdsonline.gov.in/Help.aspx"
+target="_blank"
+rel="noopener">
+❓ Help / FAQ
+</a>
+
+<a href="https://indiapostgdsonline.gov.in/Disclaimer.aspx"
+target="_blank"
+rel="noopener">
+⚠️ Disclaimer
+</a>
 
-<body>
+<a href="https://indiapostgdsonline.gov.in/TermsAndConditions.aspx"
+target="_blank"
+rel="noopener">
+📄 Terms & Conditions
+</a>
 
-<header>
-  <div class="nav">
+</div></section></div><footer><p><strong>GDS UPDATE</strong></p><p>
+This website is an independent information portal and is not the official website of India Post.
+</p><p>
+Official website:
+<a href="https://indiapostgdsonline.gov.in/"
+target="_blank"
+rel="noopener">
+indiapostgdsonline.gov.in
+</a>
+</p><p>© 2026 GDS Update. All Rights Reserved.</p></footer><script>
 
-    <div class="logo">
-      GDS<span>Update</span>
-    </div>
-
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#services">Services</a>
-      <a href="#notice">Notice</a>
-      <a href="#updates">Updates</a>
-      <a href="#links">Links</a>
-    </nav>
-
-  </div>
-</header>
-
+/* Smooth scrolling */
+document.querySelectorAll('a[href^="#"]').forEach(function(link){
 
-<section class="hero" id="home">
+    link.addEventListener("click",function(e){
 
-  <h1>GDS Recruitment Latest Updates</h1>
+        const target = document.querySelector(this.getAttribute("href"));
 
-  <p>
-    Apply Online, Application Status, Admit Card, Result,
-    Exam Date এবং GDS recruitment-এর latest updates এক জায়গায়।
-  </p>
+        if(target){
+            e.preventDefault();
 
-  <div class="buttons">
-    <a class="btn primary" href="#services">
-      Apply / Check Status
-    </a>
+            target.scrollIntoView({
+                behavior:"smooth",
+                block:"start"
+            });
+        }
 
-    <a class="btn secondary" href="#notice">
-      Latest Notice
-    </a>
-  </div>
+    });
 
-</section>
+});
 
 
-<div class="container">
+/* Make sure external buttons always work */
+document.querySelectorAll('a[target="_blank"]').forEach(function(link){
 
-  <div class="ad-box">
-    Advertisement Space
-  </div>
+    link.addEventListener("click",function(){
 
+        console.log("Opening:",this.href);
 
-  <!-- SERVICES -->
+    });
 
-  <section id="services">
+});
 
-    <h2 class="section-title">
-      GDS Important Services
-    </h2>
-
-    <div class="cards">
-
-      <div class="card">
-        <div class="icon">📝</div>
-        <h3>Apply Online</h3>
-        <p>Official GDS application link এখানে থাকবে।</p>
-        <a href="#">Apply Now</a>
-      </div>
-
-      <div class="card">
-        <div class="icon">🔎</div>
-        <h3>Application Status</h3>
-        <p>Application status check করার link।</p>
-        <a href="#">Check Status</a>
-      </div>
-
-      <div class="card">
-        <div class="icon">🎫</div>
-        <h3>Admit Card</h3>
-        <p>Admit card download করার link।</p>
-        <a href="#">Download</a>
-      </div>
-
-      <div class="card">
-        <div class="icon">📊</div>
-        <h3>Result</h3>
-        <p>GDS result এবং merit list update।</p>
-        <a href="#">Check Result</a>
-      </div>
-
-      <div class="card">
-        <div class="icon">📅</div>
-        <h3>Exam Date</h3>
-        <p>Recruitment schedule-এর latest update।</p>
-        <a href="#">View Date</a>
-      </div>
-
-      <div class="card">
-        <div class="icon">📢</div>
-        <h3>Latest Notice</h3>
-        <p>গুরুত্বপূর্ণ recruitment notice।</p>
-        <a href="#notice">View Notice</a>
-      </div>
-
-      <div class="card">
-        <div class="icon">📄</div>
-        <h3>Recruitment</h3>
-        <p>নতুন recruitment notification।</p>
-        <a href="#updates">Updates</a>
-      </div>
-
-      <div class="card">
-        <div class="icon">🔗</div>
-        <h3>Important Links</h3>
-        <p>Official ও প্রয়োজনীয় links।</p>
-        <a href="#links">View Links</a>
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <div class="ad-box">
-    Advertisement Space
-  </div>
-
-
-  <!-- NOTICE -->
-
-  <section id="notice">
-
-    <h2 class="section-title">
-      Latest Notice
-    </h2>
-
-    <div class="notice-box">
-
-      <p>
-        📢 <b>GDS Recruitment Notice</b>
-      </p>
-
-      <p>
-        নতুন notification প্রকাশ হলে এখানে বিস্তারিত তথ্য
-        এবং official notification link দেওয়া হবে।
-      </p>
-
-    </div>
-
-  </section>
-
-
-  <!-- UPDATES -->
-
-  <section id="updates" style="margin-top:18px">
-
-    <h2 class="section-title">
-      Latest Updates
-    </h2>
-
-    <div class="updates">
-
-      <div class="update">
-        <b>GDS Recruitment — Latest Notification</b>
-        <span class="badge">NEW</span>
-      </div>
-
-      <div class="update">
-        <b>GDS Application — Apply Online</b>
-        <span>Updated</span>
-      </div>
-
-      <div class="update">
-        <b>GDS Application Status</b>
-        <span>Updated</span>
-      </div>
-
-      <div class="update">
-        <b>GDS Admit Card Update</b>
-        <span>Coming Soon</span>
-      </div>
-
-      <div class="update">
-        <b>GDS Result / Merit List</b>
-        <span>Coming Soon</span>
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <div class="ad-box">
-    Advertisement Space
-  </div>
-
-
-  <!-- IMPORTANT LINKS -->
-
-  <section id="links">
-
-    <h2 class="section-title">
-      Important Links
-    </h2>
-
-    <div class="links">
-
-      <div class="link-box">
-        <h3>Official Website</h3>
-        <br>
-        <a href="#" target="_blank">
-          Visit Official →
-        </a>
-      </div>
-
-      <div class="link-box">
-        <h3>Official Notification</h3>
-        <br>
-        <a href="#" target="_blank">
-          Download →
-        </a>
-      </div>
-
-      <div class="link-box">
-        <h3>Application Link</h3>
-        <br>
-        <a href="#" target="_blank">
-          Apply Online →
-        </a>
-      </div>
-
-    </div>
-
-  </section>
-
-</div>
-
-
-<footer>
-
-  <p><b>GDSUpdate</b></p>
-
-  <p>
-    GDS Recruitment, Admit Card, Result & Latest Updates
-  </p>
-
-  <p>
-    © 2026 GDSUpdate. All Rights Reserved.
-  </p>
-
-  <p>
-    Disclaimer: This is an informational website
-    and is not an official government website.
-  </p>
-
-</footer>
-
-</body>
+</script></body>
 </html>
